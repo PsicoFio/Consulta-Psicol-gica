@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicología - Fiorella </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a mi consulta psicológica</h1>
+        <p>Te ayudo a mejorar tu bienestar emocional</p>
+    </header>
+    <section>
+        <h2>Sobre mí</h2>
+        <p>Soy Fiorella, y soy psicóloga! </p>
+    </section>
+    <section>
+        <h2>Servicios</h2>
+        <ul>
+            <li>Terapia individual</li>
+            <li>Arte Terapia</li>
+            <li>Consultas online</li>
+        </ul>
+    </section>
+    <h2>Agendar una cita</h2>
+    <form id="formulario-cita" action="https://formspree.io/f/mbldylnv" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <label for="email">Correo:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="fecha">Fecha de la cita:</label>
+        <input type="date" name="fecha" id="fecha" required>
+
+        <label for="mensaje">Mensaje (opcional):</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+
+        <button type="submit">Enviar solicitud</button>
+    </form>
+    <p id="mensaje-confirmacion" style="color: green; display: none;">Tu solicitud ha sido enviada.</p>
+<script src="script.js"></script>
+  </body>
+</html>
